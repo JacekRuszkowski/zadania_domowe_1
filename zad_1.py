@@ -1,1 +1,1 @@
-print ("Tu będzie zadani nr.1")
+print ("Tu będzie zadanie nr.1")
