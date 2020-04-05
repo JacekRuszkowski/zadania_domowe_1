@@ -6,10 +6,6 @@
 # Niech program policzy i wyświetli, ile trzeba będzie zapłacić za pięć kilo ziemniaków.
 
 
-# wersja z pętlą, ale isdecimal nie rozpoznaje floatów - twierdzi, że to nie liczba
-
-
-
 cena = float(input("Podaj cenę za kilogram ziemniaków: "))
 
 koszt_ziemniakow = cena * 5
