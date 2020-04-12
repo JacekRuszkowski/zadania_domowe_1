@@ -3,8 +3,8 @@
 
 print()
 
-masa = float(input("Podaj swoją wagę: "))
-wzrost = float(input("Podaj swój wzrost: "))
+masa = float(input("Podaj swoją wagę w kilogramach: "))
+wzrost = float(input("Podaj swój wzrost w centymetrach: "))
 
 BMI = masa/(wzrost/100)**2
 
@@ -21,12 +21,6 @@ elif 25 <= BMI <= 29.9:
 elif BMI > 30:
     print("Cierpisz na otyłość.\nSkontaktuj się z lekarzem lub dietetykiem gdyz Twoje życie może być zagrożone. Otyłośc jest przyczyną wielu poważnych chorób.")
 
-# print(0 <= liczba <= 10)
 
-
-# BMI < 18,5	niedowaga
-# 18,5 ≤ BMI ≤ 24,9	waga prawidłowa
-# 25 ≤ BMI ≤ 29,9	nadwaga
-# BMI > 30 otyłość
 
 
