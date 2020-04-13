@@ -14,8 +14,9 @@ print()
 
 while True:
 
-    wiek_input = (input("Podaj wiek: "))
-    ile_biletow_input = (input("Podaj ilośc biletów: "))
+    wiek_input = (input("Podaj wiek i naciśnij ENTER: "))
+    ile_biletow_input = (input("Podaj ilośc biletów i naciśnij ENTER: "))
+
 
     if wiek_input.isdecimal() and ile_biletow_input.isdecimal():
 
@@ -40,7 +41,7 @@ while True:
         break
 
     else:
-        print("Nie wprowadziłes poprawny danych. Poproszę o podanie liczb całkowitych.")
+        print("Nie wprowadziłes poprawnych danych. Poproszę o podanie liczb całkowitych.")
 
         continue
 
