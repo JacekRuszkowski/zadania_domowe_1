@@ -1,0 +1,1 @@
+print("Sprawdzam czy da się gita z dwóch komputerów updateowac")
