@@ -3,12 +3,7 @@
 # Program ma wypisać, w jaki dzień tygodnia buty będą gotowe do odbioru. Jeśli tak będzie ci wygodniej, możesz założyć, że naprawa butów nigdy nie będzie trwała dłużej niż siedem dni.
 
 
-'''
-zasieg od 1 do 7
 
-jak napisac w kktory dzien oddal buty?
-trzeba poprosic uzytkownika, żeby podal dzien tygodnia
-'''
 
 print ("Witamy w programie \"e-szewc\".")
 print()
