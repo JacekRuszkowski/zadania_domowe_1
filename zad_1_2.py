@@ -14,8 +14,6 @@ print()
 
 czas_naprawy = int(input("Podaj ile dni będzie trwała naprawa: "))
 
-if czas_naprawy != 7:
-    print("Podaj cyfrę z przedziału 1-7")
 
 print()
 
