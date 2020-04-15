@@ -25,35 +25,27 @@ while True:
         continue
 
 
-    czas_naprawy_input = input("\nPodaj ile dni będzie trwała naprawa (maksymalnie 31 dni) : ")
+    czas_naprawy_input = input("\nPodaj ile dni będzie trwała naprawa : ")
 
     if czas_naprawy_input.isdecimal():
         czas_naprawy = int(czas_naprawy_input)
 
-        if czas_naprawy > 31:
-            print("\nWprawdziłeś liczbę z innego zakresu niż wymagany (od 1 do 31). Spróbuj jeszcze raz.")
-            continue
 
     else:
         print("\nWproadziłeś znak, który nie jest liczbą. Spóbuj jeszcze raz.")
         continue
+
 
     # obliczenie kiedy buty będą gotowe
 
     if czas_naprawy + dzien <= 7:
         wynik = czas_naprawy + dzien
 
-    elif czas_naprawy + dzien >= 7 and czas_naprawy + dzien <= 14:
-        wynik = (czas_naprawy + dzien) - 7
-    elif czas_naprawy + dzien >= 14 and czas_naprawy + dzien <= 21:
-        wynik = (czas_naprawy + dzien) - 14
-    elif czas_naprawy + dzien >= 21 and czas_naprawy + dzien <= 28:
-        wynik = (czas_naprawy + dzien) - 21
-    elif czas_naprawy + dzien >= 28 and czas_naprawy + dzien <= 35:
-        wynik = (czas_naprawy + dzien) - 28
-    elif czas_naprawy + dzien >= 35 and czas_naprawy + dzien <= 42:
-        wynik = (czas_naprawy + dzien) - 35
+    elif (czas_naprawy+dzien) % 7 == 0:
+        wynik = 7
 
+    else:
+        wynik = (czas_naprawy + dzien) % 7
 
 
     # wypisanie wyniku
